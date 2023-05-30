@@ -31,7 +31,7 @@ while payloads['pg'] < 6:
         base_url = 'https://www.thewhiskyexchange.com/'
         absolute_url = base_url + product_url
 
-        # tracking to extract only distinct whiskeys
+        # avoiding duplicate entries
         if name not in whiskeys:
             obj.writerow([name, alc_percentage, price, '=HYPERLINK("{}")'.format(absolute_url)])
             print(f"Whiskey name: '{name}'\nAlcohol percentage: {alc_percentage}\nPrice: {price}\nLink: {absolute_url}")
