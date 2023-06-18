@@ -4,7 +4,6 @@ from time import sleep
 from random import randint
 from bs4 import BeautifulSoup
 
-############################################################################################################################################
 
 url = 'https://www.thewhiskyexchange.com/c/32/irish-whiskey?'
 payloads = {
